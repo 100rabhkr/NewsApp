@@ -76,16 +76,19 @@ public class ListActivity  extends AppCompatActivity
                 else {
                 AlertDialog alertDialog = new AlertDialog.Builder(ListActivity.this).create();
                 alertDialog.setTitle(customObject.gettitle());
-                alertDialog.setMessage("Preview the book in your Browser");
+                alertDialog.setMessage("Are You Sure You Want To Preview");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Preview",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                               /* Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                                         Uri.parse(url));
 
                                 if (intent.resolveActivity(getPackageManager()) != null) {
                                     startActivity(intent);
-                                }
+                                }*/
+                                Intent intent = new Intent(ListActivity.this, Web_Activity.class);
+                                intent.putExtra("Linkopen", url);
+                                startActivity(intent);
 
                             }
                         });
