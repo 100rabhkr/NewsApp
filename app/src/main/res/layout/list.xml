@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="15:46:59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timetextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_below="@+id/TitletextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/textColorDateDetails"
+        />
+
+    <TextView
+        android:text="Title of Article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/TitletextView"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/textColorTitledetails"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/timetextView"
+        android:layout_alignStart="@id/timetextView"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="12-02-1994"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datetextView"
+        android:layout_below="@+id/timetextView"
+        android:layout_alignLeft="@+id/timetextView"
+        android:layout_alignStart="@+id/timetextView"
+        android:textColor="@color/textColorDateDetails"/>
+
+    <TextView
+        android:text="Click Here To Open This Article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="section: section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAllCaps="true"
+        android:maxLines="2"
+        android:layout_above="@+id/datetextView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
